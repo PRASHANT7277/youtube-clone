@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/683b4b40e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/result.css" />
+    <link rel="stylesheet" href="./style/nav.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="nav"></div>
+      <hr />
+      <div id="body">
+        <div id="left">
+          <div>
+            <div><i class="fas fa-home"></i>Home</div>
+            <div><i class="far fa-compass"></i>Explore</div>
+            <div><i class="fab fa-youtube"></i>Subscription</div>
+          </div>
+          <hr />
+          <div>
+            <div><i class="fas fa-book-reader"></i>Librery</div>
+            <div><i class="fas fa-history"></i>History</div>
+            <div><i class="fas fa-film"></i>Your Video</div>
+            <div><i class="far fa-clock"></i>Watch later</div>
+            <div><i class="fas fa-thumbs-up"></i>LIked Video</div>
+          </div>
+          <hr />
+          <div>
+            <div><i class="fab fa-youtube"></i>Youtube Premium</div>
+            <div><i class="fas fa-film"></i>Films</div>
+            <div><i class="fas fa-gamepad"></i>Gaming</div>
+            <div><i class="fas fa-tshirt"></i>Fashion</div>
+            <div><i class="far fa-lightbulb"></i>Learning</div>
+            <div><i class="fas fa-trophy"></i>Sports</div>
+          </div>
+          <hr />
+          <div>
+            <div><i class="fas fa-cog"></i>Setting</div>
+            <div><i class="fab fa-font-awesome-flag"></i>Reprt History</div>
+            <div><i class="fas fa-question-circle"></i>Help</div>
+          </div>
+        </div>
+
+        <div id="main">
+          <div id="cat"></div>
+          <div id="result"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./scripts/youtube.js"></script>
+<script type="module">
+  var nav = document.getElementById("nav");
+  var ca = document.getElementById("cat");
+
+  import category from "./components/cat.js";
+
+  import navbar from "./components/navbar.js";
+
+  nav.innerHTML = navbar();
+  ca.innerHTML = category();
+</script>

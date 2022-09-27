@@ -1,0 +1,17 @@
+#main {
+  display: flex;
+  height: 550px;
+  margin-top: 20px;
+}
+#video {
+  flex: 3;
+}
+#recom {
+  flex: 1;
+}
+
+#re{
+
+  margin-left: 5px;
+
+}
